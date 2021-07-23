@@ -1,23 +1,4 @@
-<addons>
-<addon id="repository.naranjitoRepo" name="naranjitoRepo" version="1.0" provider-name="naranjito">
-    <extension point="xbmc.addon.repository" name="Nome Repository">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/brujotv/repositoriomatrix/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/brujotv/repositoriomatrix/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/brujotv/repositoriomatrix/master/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>naranjitoRepo</summary>
-        <description>Addons para todos</description>
-        <disclaimer></disclaimer>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
+<?xml version="3.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.Naranjitomatrix"
        name="[COLOR orange]Naranjito[/COLOR]"
        version="1.2.1+matrix"
@@ -47,4 +28,3 @@
 	</news>
 </extension>
 </addon>
-</addons>
