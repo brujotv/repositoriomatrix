@@ -63,4 +63,152 @@
         <platform>all</platform>
     </extension>
 </addon>
+<addon id="plugin.program.ArquivosKodi-Wizard" name="[COLOR dodgerblue]ArquivosKodi[/COLOR] [COLOR lavender]Wizard[/COLOR]" version="4.1" provider-name="TioJarvis">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+		<import addon="script.module.kodi-six" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR dodgerblue]ArquivosKodi Wizard[/COLOR]</summary>
+        <description lang="en">ArquivosKodi Wizard é um instalador de Addons, Builds e manutenções para Kodi  ACESSE: www.arquivoskodi.com.br </description>
+        <website>www.arquivoskodi.com.br</website>
+		<platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+fork openwizard
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="xbmc.python" version="2.25.0" provider-name="Team Kodi">
+  <backwards-compatibility abi="2.1.0"/>
+  <requires>
+    <import addon="xbmc.core" version="0.1.0"/>
+  </requires>
+  <extension-point id="script" schema="script.xsd"/>
+  <extension-point id="subtitles" schema="script.xsd"/>
+  <extension-point id="lyrics" schema="script.xsd"/>
+  <extension-point id="weather" schema="script.xsd"/>
+  <extension-point id="library" schema="script.xsd"/>
+  <extension-point id="plugin" schema="pluginsource.xsd"/>
+  <extension-point id="context.item" schema="contextitem.xsd"/>
+</addon>
+<addon id="service.streamlink.proxy" name="Streamlink Proxy" version="4.1.2" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.streamlink.base" version="2018.06.12"/>
+        <!--<import addon="script.module.streamlink.plugins" version="1.0.3"/>-->
+    </requires>
+    <extension point="xbmc.service" library="resources/lib/service.py" start="login"/>
+    <extension point="xbmc.python.pluginsource" library="options.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en de el</language>
+        <summary>Streamlink Proxy</summary>
+        <description>Streamlink Proxy for Kodi</description>
+        <platform>all</platform>
+        <license>GPLv3</license>
+        <source>https://github.com/Twilight0/service.streamlink.proxy</source>
+        <size>172839</size>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>+ 4.1.2
+- Removed plugins dependency
+- Bumped base module dependency to latest</news>
+    </extension>
+</addon>
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
+</addon>
+<addon id="repository.magellan" name="Repo Magellan" version="1.2" provider-name="Ike">
+	<extension point="xbmc.addon.repository" name="repository.magellan">
+		<info compressed="false">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml</info>
+		<checksum>http://raw.github.com/afonsinoguimaraes/repository.magellan/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/afonsinoguimaraes/repository.magellan/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Repo Magellan</summary>
+		<description>Repo Magellan</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+<addon id="repository.resolverurl" name="[B][COLOR lime]Resolverurl repo[/COLOR][/B]" version="0.0.2" provider-name="resolver">
+	<extension point="xbmc.addon.repository" name="Resolverurl repo">
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>	
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+<addon id="repository.balandro" name="Balandro Repo" version="1.0.3" provider-name="Balandro">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+
+    <extension point="xbmc.addon.repository" name="Balandro Repo">
+        <info>https://balandro.tk/repo/addons.xml</info>
+        <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://balandro.tk/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Balandro</summary>
+        <description>Balandro es un navegador para webs con vídeos de películas y series.</description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+
+</addon>
 </addons>
