@@ -9,6 +9,18 @@
     <import addon="script.module.simplejson"/>
 	<import addon="script.module.kodi-six" />
 	<import addon="script.video.F4mProxy-2.8.8" />
+	<import addon="script.module.six"/>
+    <import addon="script.module.kodi-six"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.websocket" optional="true" />
+    <import addon="script.module.youtube.dl" optional="true" />
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.dateutil" optional="true" />
+    <import addon="script.module.resolveurl" optional="true" />
+    <import addon="script.module.cloudscraper" optional="true" />
+    <import addon="script.module.inputstreamhelper" />
+    <import addon="script.module.pycryptodome" optional="true" />
+    <import addon="script.module.slproxy" optional="true" />
 </requires>  
 <extension point="xbmc.python.pluginsource" library="default.py">
 	<provides>video</provides>
