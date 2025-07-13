@@ -4,7 +4,7 @@
         <info>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml.md5</checksum>
         <datadir zip="true">
-            <dir minversion="21.0.0">https://github.com/brujotv/repositoriomatrix/main/repositorio/</dir>
+            <dir minversion="21.0.0">https://brujotv.github.io/repositoriomatrix/repositorio/</dir>
         </datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
