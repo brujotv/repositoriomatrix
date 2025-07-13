@@ -37,7 +37,9 @@
     <extension point="xbmc.addon.repository" name="naranjito">
         <info>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/brujotv/repositoriomatrix/main/Repositorio/</datadir>
+        <datadir zip="true">
+            <dir minversion="21.0.0">https://github.com/brujotv/repositoriomatrix/main/repositorio/</dir>
+        </datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositorio para Mi</summary>
