@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.naranjito" name="[COLOR lime]naranjito[/COLOR] Repo" version="1.0.1" provider-name="Yo Mismo">
-    <extension point="xbmc.addon.repository" name="Mi repositorio">
+<addon id="repository.naranjito" name="[COLOR lime]naranjito[/COLOR] Repo" version="1.0.1" provider-name="entretenimiento">
+    <extension point="xbmc.addon.repository" name="naranjito">
         <info>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/repositorio/addons.xml</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/brujotv/repositoriomatrix/refs/heads/main/Repositorio/</datadir>
+        <datadir zip="true">https://raw.githubusercontent.com/brujotv/repositoriomatrix/main/Repositorio/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositorio para Mi</summary>
